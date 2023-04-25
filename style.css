@@ -1,0 +1,213 @@
+html {    
+    background-color: #888;
+	font-family: 'Montserrat', sans-serif;
+}
+
+header {
+	background-color: #586774;    
+    color: white;
+    padding: 3rem 2rem;    
+}
+
+header img {
+    position: relative;
+    float: left;
+    bottom: 10px;
+}
+
+header h1 {
+    text-align: center;
+    font-weight: bold;
+    font-size: 25px;    
+}
+
+main {
+    background: #dfdfdf;  
+    display: flex;
+}
+
+.texto {
+    width: 500px;
+    height: 500px;
+    margin: 0 auto;
+}
+
+.texto-encriptar {     
+    height: 410px;   
+}
+
+.texto-encriptar textarea {
+    background-color: #dfdfdf;
+    width: 390px;
+    height: 345px;
+    margin: 30px 30px 5px 30px;
+	padding: 10px 25px;
+    border: none;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 15px;
+    font-weight: bold;
+    outline: none;
+    resize: none;
+}
+
+#alert {   
+    font-size: 10px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.botones {
+    display: flex;
+    height: 90px;
+}
+
+#encrip {
+    background-color: #77eeff;
+    border-radius: 20px;
+    margin: 20px 10px;
+    height: 50px;
+    width: 230px;
+    transition: 0.3s;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+#encrip:hover {
+    background-color: #44bbcc;
+    transform: scale(1.1);
+}
+
+#dsencrip {
+    background-color: #ff6666;
+    border-radius: 20px;
+    margin: 20px 10px;
+    height: 50px;
+    width: 230px;
+    transition: 0.3s;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+#dsencrip:hover {
+    background-color: #dd4444;
+    transform: scale(1.1);
+}
+
+.resultado {    
+    width: 500px;
+    height: 500px;
+    margin: 0 auto;  
+}
+
+#munheco {
+    margin: 50px 100px;
+    width: 300px;
+    height: auto;
+}
+
+#nomensaje {
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#mensaje {
+    background-color: #dfdfdf;
+    width: 390px;
+    height: 345px;
+    margin: 30px 30px 15px 30px;
+	padding: 10px 25px;
+    border: none;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 15px;
+    font-weight: bold;
+    outline: none;
+    resize: none;
+    display: none;
+}
+
+#copiar {
+    background-color: #66ee66;
+    border-radius: 20px;
+    margin: 35px 135px 20px;
+    height: 50px;
+    width: 230px;
+    transition: 0.3s;
+    font-size: 15px;
+    font-weight: bold;
+    display: none;
+}
+
+#copiar:hover {
+    background-color: #44ee44;
+    transform: scale(1.1);
+}
+
+footer {
+    background-color: #364552;
+    color: white;
+    padding: 3rem 2rem;
+    text-align: center;
+}
+
+@media screen and (max-width:950px) {
+    main {
+        display: block;
+    }        
+}
+
+@media screen and (max-width:510px) {
+    header {
+        padding: 2rem 2rem;
+    }
+    header img {
+        bottom: 0;
+    }
+    .texto {
+        width: 280px;
+        height: 420px;
+    }
+    .texto-encriptar {
+        height: 300px;
+        margin: 0 auto;
+        width: 280px;
+    }
+    .texto-encriptar textarea {
+        width: 230px;
+        height: 230px;
+        margin: 30px 0 5px;
+    }
+    .botones {
+        display: block;
+        width: 240px;
+        height: 120px;
+        margin: 0 auto;      
+    }
+    #encrip, #dsencrip {
+        margin: 5px 5px;
+    }
+    .resultado {
+        width: 280px;
+        height: 350px;
+    }
+    #munheco {
+        margin: 20px 0;
+        width: 280px;
+    }
+    #mensaje {
+        width: 230px;
+        height: 230px;
+        margin: 30px 0 5px;
+    }
+    #copiar {
+        width: 240px;        
+        margin: 0 auto;
+    }
+}
+@media screen and (max-width:400px) {
+    header img {
+        display: none;
+    }
+}

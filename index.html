@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+
+<html lang="es">
+
+    <head>
+
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width= device-width">
+        <title>Encriptador</title>        
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="reset.css">
+        <link rel="stylesheet" href="style.css">
+        <script type="text/javascript" src="jscript.js"></script>
+
+    </head>
+
+    <body>
+
+        <header>     
+
+            <img src="img/Logo.png">                       
+            <h1>ENCRIPTADOR DE TEXTO</h1>
+            
+        </header>
+
+        <main>
+
+            <div class="texto">
+                
+                <div class="texto-encriptar">
+
+                    <textarea id="mensajeEncrip" placeholder="Ingrese el texto a encriptar"></textarea>                                     
+                    <p id="alert">&#9888; Solo letras misusculas y sin acentos</p>
+                
+                </div>
+                
+                <div class="botones">
+
+                    <input type="submit" value="Encriptar" id="encrip" onclick="encriptar()">
+                    <input type="submit" value="Desencriptar" id="dsencrip" onclick="desencriptar()">
+
+                </div>
+
+            </div>
+
+            <div class="resultado">
+
+                <img id="munheco" src="img/Munheco.png">
+                <p id="nomensaje">Ningún mensaje fue encontrado</p>
+                <textarea id="mensaje"></textarea>
+                <input type="submit" value="Copiar" id="copiar" onclick="copiar()">
+
+            </div>
+
+        </main>
+
+        <footer>
+
+            <p>Desarrollado por: Carlos Forero</p>
+
+        </footer>
+    </body>
+</html>
